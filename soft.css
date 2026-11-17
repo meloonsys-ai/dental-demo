@@ -332,3 +332,16 @@ body[data-ba="y"] .ba-tag-after { bottom: 14px; left: 14px; }
   .services li:last-child:nth-child(3n + 1) { grid-column: 3 / span 2; }
   .services li:nth-last-child(2):nth-child(3n + 1) { grid-column: 2 / span 2; }
 }
+
+/* QA pass: headings never hyphenate and wrap evenly; long names don't push the header CTA off a 375px screen */
+.display, .services h3, .adv h3, .doc-info b { hyphens: manual; overflow-wrap: normal; text-wrap: balance; }
+.lead, .muted, .services p, .adv p { text-wrap: pretty; }
+.logo { min-width: 0; }
+.logo > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.top > .btn { flex: none; }
+/* Floating badges: cap width so long chips can't cover the render or each other */
+@media (min-width: 768px) { .badge { max-width: 40%; } .badge > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } }
+/* Sparse data: 1-2 doctors sit centred; about without points becomes one column */
+.doctors { justify-content: safe center; }
+@media (min-width: 900px) { .about:not(:has(.points li)) { grid-template-columns: 1fr; } }
+.points:not(:has(li)) { display: none; }

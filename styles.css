@@ -105,6 +105,7 @@ img { max-width: 100%; display: block; }
 .display { letter-spacing: var(--display-ls); line-height: 1.02; margin: 0; }
 /* Jost Thin for headings and big numbers; body text stays Manrope for readability */
 .display, .stats b, .adv li::before, .doc-ph, .modal-title, .foot-name { font-family: var(--font-display); font-weight: var(--display-w); }
+.display, h3, .modal-title { text-wrap: balance; } /* no one-word last lines in headings */
 .display em { font-style: normal; color: var(--accent); }
 .eyebrow { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--line); border-radius: 99px; padding: 6px 14px; margin: 0 0 18px; }
 .muted, .note { color: var(--muted); }
@@ -401,7 +402,12 @@ main { position: relative; isolation: isolate; }
   .services li { grid-column: span 2; }
   .services li:last-child:nth-child(3n + 1) { grid-column: 3 / span 2; }
   .services li:nth-last-child(2):nth-child(3n + 1) { grid-column: 2 / span 2; }
+  /* short data: 4 advantages fill the row; 1-3 doctors sit centred instead of leaving a hole on the right */
+  .adv:has(> li:nth-child(4):last-child) { --cols: 4; }
+  .doctors { justify-content: safe center; }
 }
+/* a single before/after card (placeholder) centred, not stranded in the first of three columns */
+.ba-list:has(> li:only-child) { grid-template-columns: min(100%, 720px); justify-content: center; }
 @media (min-width: 601px) and (max-width: 960px) {
   .services li:last-child:nth-child(odd), .reviews li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }

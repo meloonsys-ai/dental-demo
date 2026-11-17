@@ -347,3 +347,10 @@ a { color: inherit; }
 }
 /* Why: the first card spans; pair the rest, last one spans if it is left alone */
 @media (min-width: 720px) { .adv li:last-child:nth-child(even) { grid-column: 1 / -1; } }
+
+/* QA polish: no orphan last words in headings/lead copy; desktop title balances as one line set */
+h1, h2, h3, blockquote { text-wrap: balance; }
+p, .lead { text-wrap: pretty; }
+@media (min-width: 1000px) { .hero-title { text-wrap: balance; } }
+@media (min-width: 1000px) { .doctors { justify-content: safe center; } } /* 1-3 doctors sit centred, not left with an empty slot */
+@media (max-width: 479px) { .hero .actions { width: 100%; } .hero .actions .btn { flex: 1 1 100%; } } /* stacked hero CTAs share one width */
