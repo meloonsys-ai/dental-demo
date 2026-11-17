@@ -62,10 +62,20 @@
       .join('');
   }
 
+  // Demo fallback: clinics with no/almost no 2GIS price list get typical Astana prices, clearly labelled as approximate.
+  const approx = Object.values(c.prices || {}).flat().length < 3;
+  if (approx) c.prices = {
+    'Консультация и диагностика': [['Консультация', 0], ['Прицельный снимок', 3000], ['3D-снимок (КТ)', 12000]],
+    'Терапия': [['Лечение кариеса', 20000], ['Лечение пульпита', 45000]],
+    'Гигиена': [['Профчистка (ультразвук + Air Flow)', 20000]],
+    'Хирургия': [['Удаление зуба', 15000], ['Удаление зуба мудрости', 30000], ['Имплант под ключ', 180000]],
+    'Ортопедия и ортодонтия': [['Металлокерамическая коронка', 45000], ['Циркониевая коронка', 90000], ['Брекеты (одна челюсть)', 150000]],
+  };
   $('[data-prices]').innerHTML = Object.entries(c.prices)
     .map(([cat, rows], i) => `<details${i ? '' : ' open'}><summary>${esc(cat)}<i class="ph ph-plus" aria-hidden="true"></i></summary><ul>${rows.map(([n, p]) => `<li><span>${esc(n)}</span><b>${money(p)}</b></li>`).join('')}</ul></details>`)
     .join('');
   $('#prices').hidden = !Object.keys(c.prices || {}).length; // clinics without a 2GIS price list
+  if (approx) $$('#prices .note, #prices .muted').forEach((n) => (n.textContent = 'Цены примерные, по Астане. Точную стоимость клиника назовёт после консультации.'));
 
   if (c.reviews?.length) {
     $('#reviews').hidden = false;
