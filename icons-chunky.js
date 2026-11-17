@@ -1,0 +1,25 @@
+
+window.ICONS = {
+  'tooth': '<path d="M12 4.5C9.6 2.9 6.1 3.1 4.7 5.7c-1.5 2.7-.5 5.9.5 8.8.7 2 1.5 5.6 3.4 5.6 1.6 0 1.6-3.9 3.4-3.9s1.8 3.9 3.4 3.9c1.9 0 2.7-3.6 3.4-5.6 1-2.9 2-6.1.5-8.8C17.9 3.1 14.4 2.9 12 4.5Z"/><path d="M12 4.5c1 .8 2.1 1.1 3.2 1.1"/>',
+  'screwdriver': '<rect x="8" y="3" width="8" height="4" rx="2"/><path d="M10 7v2M14 7v2M9 9h6v7l-3 5-3-5V9Z"/><path d="M9 12h6M9 15h6M10.5 18h3"/>',
+  'smiley': '<path d="M4.2 11.5a7.8 7.8 0 1 1 15.6 0"/><path d="M5.2 15c1.6 3.3 4 5 6.8 5s5.2-1.7 6.8-5"/><path d="M6.8 13.5c2.9 2.5 7.5 2.5 10.4 0"/><rect x="8" y="12.5" width="3" height="3.5" rx="1"/><rect x="13" y="12.5" width="3" height="3.5" rx="1"/><path d="M11 14.2h2"/>',
+  'first-aid-kit': '<rect x="3" y="7" width="18" height="14" rx="3"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M12 11v6M9 14h6"/>',
+  'crown-simple': '<path d="M3.5 7.5 8 11l4-7 4 7 4.5-3.5-2 11h-13l-2-11Z"/><path d="M6 21h12"/><circle cx="3.5" cy="6.5" r="1"/><circle cx="12" cy="3" r="1"/><circle cx="20.5" cy="6.5" r="1"/>',
+  'sparkle': '<path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5L12 2Z"/><path d="M19 3v3M17.5 4.5h3M4.5 18v3M3 19.5h3"/>',
+  'moon-stars': '<path d="M19.5 15.8A8.5 8.5 0 0 1 8.2 4.5 8.5 8.5 0 1 0 19.5 15.8Z"/><path d="M17 3v5M14.5 5.5h5M20 9v3M18.5 10.5h3"/>',
+  'calendar-heart': '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7.5 3v4M16.5 3v4M3 10h18"/><path d="M12 18.5 8.7 15.4a2 2 0 0 1 2.9-2.8l.4.4.4-.4a2 2 0 0 1 2.9 2.8L12 18.5Z"/>',
+  'star': '<path d="m12 2.8 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.6l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.8Z"/>',
+  'check-circle': '<circle cx="12" cy="12" r="9"/><path d="m8 12 2.7 2.7L16.5 9"/>',
+  'plus': '<path d="M12 4v16M4 12h16"/>',
+  'x': '<path d="m5 5 14 14M19 5 5 19"/>',
+  'arrow-left': '<path d="M20 12H4m7-7-7 7 7 7"/>',
+  'arrow-right': '<path d="M4 12h16m-7-7 7 7-7 7"/>',
+  'arrow-up-right': '<path d="M5 19 19 5M8 5h11v11"/>',
+  'map-pin': '<path d="M20 10c0 5.5-8 11.5-8 11.5S4 15.5 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',
+  'warning-circle': '<circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><circle cx="12" cy="17" r=".7" fill="currentColor"/>',
+  'instagram-logo': '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/>',
+  'scan': '<path d="M8 3H6a3 3 0 0 0-3 3v2M16 3h2a3 3 0 0 1 3 3v2M3 16v2a3 3 0 0 0 3 3h2M21 16v2a3 3 0 0 1-3 3h-2"/><path d="M12 7.5c-1.5-1-3.8-.9-4.7.8-1 1.9-.2 4.1.4 6 .5 1.4 1 3.3 2.1 3.3s.9-2.7 2.2-2.7 1.1 2.7 2.2 2.7 1.6-1.9 2.1-3.3c.6-1.9 1.4-4.1.4-6-.9-1.7-3.2-1.8-4.6-.8Z"/><path d="M5 12h14"/>',
+  'wallet': '<rect x="3" y="6" width="18" height="15" rx="3"/><path d="M3 9V6a3 3 0 0 1 3-3h12"/><path d="M21 12h-6a3 3 0 0 0 0 6h6"/><circle cx="15.5" cy="15" r=".7" fill="currentColor"/>',
+  'shield-check': '<path d="M12 2.5 20 6v5.5c0 5-3.3 8.2-8 10-4.7-1.8-8-5-8-10V6l8-3.5Z"/><path d="m8.5 12 2.5 2.5 4.8-5"/>',
+  'chat-heart': '<path d="M20.5 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-3.8-.9L3 21l1.8-5.2a8.5 8.5 0 1 1 15.7-4.3Z"/><path d="M12 16 8.6 12.7a2.1 2.1 0 0 1 3-3l.4.4.4-.4a2.1 2.1 0 0 1 3 3L12 16Z"/>'
+};

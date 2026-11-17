@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Стоматология</title>
+  <meta name="description" content="" />
+  <meta name="robots" content="noindex" /><!-- sales demo, not the clinic's official site -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../silver.css?v=mwkexw69" />
+  <link rel="stylesheet" href="../../extras.css?v=mwkexw69" />
+  <script src="config.js"></script>
+  <script>
+    CLINIC.heroImage = '../../assets/v-silver.webp'; CLINIC.heroRing = false;
+    CLINIC.services.forEach((s) => (s.image = '')); // vector icons only on this variant
+    // if the silver render is missing, fall back to the default tooth render once
+    document.addEventListener('error', (e) => {
+      const img = e.target;
+      if (img.matches && img.matches('[data-hero-art] img') && !img.dataset.fb) { img.dataset.fb = '1'; img.src = '../../assets/tooth.webp'; }
+    }, true);
+  </script>
+  <script src="../../app.js?v=mwkexw69" defer></script>
+  <script>addEventListener('DOMContentLoaded', () => document.querySelector('.wordmark')?.style.setProperty('--n', CLINIC.name.length));</script>
+  <script src="../../icons-silver.js?v=mwkexw69" defer></script>
+  <script src="../../icons.js?v=mwkexw69" defer></script>
+  <script src="../../extras.js?v=mwkexw69" defer></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="logo" href="#top"><span class="logo-mark" data-tooth></span><span data-name></span></a>
+      <nav class="nav" aria-label="Разделы">
+        <a href="#services">Услуги</a><a href="#about">О клинике</a><a href="#prices">Цены</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="#booking">Записаться</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" data-sec="hero">
+      <p class="wordmark" aria-hidden="true" data-name></p>
+      <p class="hero-loc"><i class="ph ph-map-pin" aria-hidden="true"></i><span data-eyebrow></span></p>
+      <h1 class="display hero-title"><span class="t1" data-title1></span> <span class="t2" data-title2></span></h1>
+      <div class="hero-art">
+        <div class="hero-img" data-hero-art aria-hidden="true"></div>
+        <div class="orbit-front">
+          <span class="chip chip-a" data-chip="0"></span>
+          <span class="chip chip-b" data-chip="1"></span>
+          <span class="chip chip-c" data-chip="2"></span>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <p class="lead" data-lead></p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#booking">Записаться на консультацию <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          <a class="btn btn-ghost" href="#prices">Цены</a>
+        </div>
+      </div>
+      <ul class="stats" data-stats aria-label="Клиника в цифрах"></ul>
+      <div class="band" data-band hidden></div>
+    </section>
+
+    <section class="wrap block why" data-sec="adv">
+      <div class="why-head">
+        <p class="eyebrow">Почему мы</p>
+        <h2 class="display h2">Больше, чем лечение — <em>забота о каждой детали</em></h2>
+        <a class="link" href="#booking">Бесплатная консультация <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+      <ol class="adv" data-adv aria-label="Преимущества"></ol>
+    </section>
+
+    <section class="dark" id="services" data-sec="services">
+      <div class="wrap block">
+        <p class="eyebrow">Услуги</p>
+        <h2 class="display h2">Всё для здоровой <em>улыбки</em></h2>
+        <ul class="services" data-services></ul>
+      </div>
+    </section>
+
+    <section class="wrap block about" id="about" data-sec="about" hidden>
+      <div>
+        <p class="eyebrow">О клинике</p>
+        <h2 class="display h2">Добро пожаловать в <em data-name></em></h2>
+        <div class="about-text" data-about-text></div>
+        <figure class="about-quote card" data-about-quote hidden></figure>
+      </div>
+      <ul class="about-points" data-about-points></ul>
+    </section>
+
+    <section class="wrap block" id="doctors" data-sec="doctors" hidden>
+      <p class="eyebrow">Команда</p>
+      <h2 class="display h2">Наши <em>врачи</em></h2>
+      <div data-carousel aria-roledescription="carousel">
+        <ul class="doctors track" data-doctors aria-label="Врачи"></ul>
+        <div class="car-ctrl">
+          <div class="dots" role="group" aria-label="Позиция"></div>
+          <div class="arrows">
+            <button class="arrow" type="button" aria-label="Назад"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+            <button class="arrow" type="button" aria-label="Вперёд"><i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap block split" data-sec="prices">
+    <section id="prices">
+      <p class="eyebrow">Цены</p>
+      <h2 class="display h2">Стоимость <em>лечения</em></h2>
+      <div class="prices" data-prices></div>
+      <p class="note">Точная стоимость — после консультации и диагностики.</p>
+    </section>
+
+    <section id="reviews" hidden>
+      <p class="eyebrow">Отзывы</p>
+      <h2 class="display h2">Что говорят <em>пациенты</em></h2>
+      <ul class="reviews" data-reviews></ul>
+    </section>
+    </div>
+
+    <section class="wrap block" id="works" data-sec="works" hidden>
+      <p class="eyebrow">Наши работы</p>
+      <h2 class="display h2">Работы <em>клиники</em></h2>
+      <ul class="works" data-works aria-label="Фото работ"></ul>
+    </section>
+
+    <section class="wrap block" id="before-after" data-sec="ba" hidden>
+      <p class="eyebrow">До и после</p>
+      <h2 class="display h2">Результаты <em>лечения</em></h2>
+      <ul class="ba-list" data-ba></ul>
+    </section>
+
+    <section class="wrap block contacts" id="contacts" data-sec="contacts">
+      <div>
+        <p class="eyebrow">Контакты</p>
+        <h2 class="display h2">Готовы <em>помочь</em></h2>
+        <p class="muted">Оставьте заявку — администратор перезвонит и подберёт удобное время консультации.</p>
+        <a class="btn btn-primary" href="#booking">Записаться на консультацию</a>
+      </div>
+      <ul class="branches" data-branches></ul>
+    </section>
+  </main>
+
+  <dialog class="modal" data-modal aria-labelledby="modal-title">
+    <form class="form" data-form novalidate>
+      <button class="modal-close" type="button" data-close aria-label="Закрыть"><i class="ph ph-x" aria-hidden="true"></i></button>
+      <h2 class="modal-title display" id="modal-title">Запись на консультацию</h2>
+      <p class="muted">Оставьте имя и телефон — администратор перезвонит и подберёт удобное время.</p>
+      <label>Имя<input name="name" required autocomplete="given-name" maxlength="60" /></label>
+      <label>Телефон<input name="phone" required type="tel" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="+7" /></label>
+      <label data-branch-field>Филиал<select name="branch" data-branch-select></select></label>
+      <p class="form-error" data-error role="alert" hidden><i class="ph ph-warning-circle" aria-hidden="true"></i> Укажите имя и телефон.</p>
+      <button class="btn btn-primary btn-block" type="submit">Записаться на консультацию</button>
+      <p class="consent">Нажимая кнопку, вы соглашаетесь на обработку имени и телефона для записи.</p>
+    </form>
+  </dialog>
+
+  <footer class="wrap foot">
+    <p class="foot-name display" data-name aria-hidden="true"></p>
+    <div class="foot-row"><span data-copy></span><a data-insta hidden target="_blank" rel="noopener"><i class="ph ph-instagram-logo" aria-hidden="true"></i> Instagram</a></div>
+  </footer>
+</body>
+</html>

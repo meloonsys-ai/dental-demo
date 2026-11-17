@@ -1,0 +1,25 @@
+
+window.ICONS = {
+  'tooth': '<path fill="currentColor" stroke="none" d="M12 4.2C9.6 2.5 5.8 2.6 4.2 5.4c-1.6 2.8-.4 6.3.7 9.4.9 2.6 1.8 6.2 4.1 6.2 2 0 1.4-4.8 3-4.8s1 4.8 3 4.8c2.3 0 3.2-3.6 4.1-6.2 1.1-3.1 2.3-6.6.7-9.4-1.6-2.8-5.4-2.9-7.8-1.2Zm-4.9 1c1.5-.7 3.2-.1 4.3.8l1.2.9 1.3-1c1.1-.8 2.8-1.4 4.2-.7-1.5-1.4-3.5-1-5.1.1l-1 .7-1-.7c-1.5-1.1-3.5-1.5-4.9-.1Z" fill-rule="evenodd"/>',
+  'screwdriver': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M8 2h8v5h-2v2h3v7l-5 6-5-6V9h3V7H8V2Zm2 9v1h4v-1h-4Zm0 3v1h4v-1h-4Zm1 3 1 1.3 1-1.3h-2Z"/>',
+  'smiley': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm0 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14ZM7 12h10v3H7v-3Zm2-2h2v2H9v-2Zm4 0h2v2h-2v-2Z"/><path fill="currentColor" stroke="none" d="M7 12h10v1H7z"/>',
+  'first-aid-kit': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M9 2h6a2 2 0 0 1 2 2v2h3a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h3V4a2 2 0 0 1 2-2Zm1 3v1h4V5h-4Zm1 5v3H8v3h3v3h3v-3h3v-3h-3v-3h-3Z"/>',
+  'crown-simple': '<path fill="currentColor" stroke="none" d="m2 6 5.5 5L12 3l4.5 8L22 6l-2.5 13h-15L2 6ZM5 20h14v2H5z"/>',
+  'sparkle': '<path fill="currentColor" stroke="none" d="m12 1 3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8ZM19 2l.8 2.2L22 5l-2.2.8L19 8l-.8-2.2L16 5l2.2-.8L19 2ZM5 17l.7 1.3L7 19l-1.3.7L5 21l-.7-1.3L3 19l1.3-.7L5 17Z"/>',
+  'moon-stars': '<path fill="currentColor" stroke="none" d="M13.5 2a9.5 9.5 0 1 0 8.5 13.8A8 8 0 0 1 13.5 2ZM18 2l1 2.5L21.5 5.5 19 6.5 18 9l-1-2.5-2.5-1L17 4.5 18 2Z"/>',
+  'calendar-heart': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M6 2h3v3h6V2h3v3h2a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h2V2ZM4 11v9h16v-9H4Zm8 8-4-3.8a2.5 2.5 0 0 1 3.5-3.5l.5.5.5-.5a2.5 2.5 0 0 1 3.5 3.5L12 19Z"/>',
+  'star': '<path fill="currentColor" stroke="none" d="m12 1 3.4 7 7.6 1.1-5.5 5.4 1.3 7.5L12 18.4 5.2 22l1.3-7.5L1 9.1 8.6 8 12 1Z"/>',
+  'check-circle': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22Zm-1.5 15.8 7-7-2.1-2.1-4.9 4.9-2.2-2.2-2.1 2.1 4.3 4.3Z"/>',
+  'plus': '<path fill="currentColor" stroke="none" d="M10 2h4v8h8v4h-8v8h-4v-8H2v-4h8V2Z"/>',
+  'x': '<path fill="currentColor" stroke="none" d="m5 2 7 7 7-7 3 3-7 7 7 7-3 3-7-7-7 7-3-3 7-7-7-7 3-3Z"/>',
+  'arrow-left': '<path fill="currentColor" stroke="none" d="m10 3 3 3-4 4h13v4H9l4 4-3 3L1 12l9-9Z"/>',
+  'arrow-right': '<path fill="currentColor" stroke="none" d="m14 3-3 3 4 4H2v4h13l-4 4 3 3 9-9-9-9Z"/>',
+  'arrow-up-right': '<path fill="currentColor" stroke="none" d="M10 2h12v12h-4V8.8L5 22l-3-3L15.2 6H10V2Z"/>',
+  'map-pin': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 1a10 10 0 0 1 10 10c0 6-10 12-10 12S2 17 2 11A10 10 0 0 1 12 1Zm0 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/>',
+  'warning-circle': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22Zm-1.5 5h3l-.4 9h-2.2l-.4-9Zm0 11h3v3h-3v-3Z"/>',
+  'instagram-logo': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M7 1h10a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6H7a6 6 0 0 1-6-6V7a6 6 0 0 1 6-6Zm0 3a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm5.5-4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/>',
+  'scan': '<path fill="currentColor" stroke="none" d="M2 2h8v3H5v5H2V2ZM14 2h8v8h-3V5h-5V2ZM2 14h3v5h5v3H2v-8ZM19 14h3v8h-8v-3h5v-5Z"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 7c-2-1.3-5-1-5.8 1.5-.7 2.2.3 5.2 1.1 7.4.6 1.6 1.2 3.1 2.4 3.1 1.4 0 1.1-3.5 2.3-3.5s.9 3.5 2.3 3.5c1.2 0 1.8-1.5 2.4-3.1.8-2.2 1.8-5.2 1.1-7.4C17 6 14 5.7 12 7Zm-3.2 2c1.1-.5 2.2.1 3.2.8 1-.7 2.1-1.3 3.2-.8-.9-1.2-2.3-1.1-3.2-.4-.9-.7-2.3-.8-3.2.4Z"/>',
+  'wallet': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M5 3h15v4H6a2 2 0 0 0 0 4h16v10a2 2 0 0 1-2 2H4a3 3 0 0 1-3-3V7a4 4 0 0 1 4-4Zm17 10h-7a4 4 0 0 0 0 8h7v-8Zm-7 3h2v2h-2v-2Z"/>',
+  'shield-check': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 1 22 5v7c0 6-4 9.5-10 11C6 21.5 2 18 2 12V5l10-4Zm-1.5 15.8 7-7-2.2-2.2-4.8 4.8-2.2-2.2-2.2 2.2 4.4 4.4Z"/>',
+  'chat-heart': '<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 1a11 11 0 0 1 0 22c-1.5 0-2.9-.3-4.2-.8L1 23l2-6.2A11 11 0 0 1 12 1Zm0 16.5-5-4.8a3.3 3.3 0 0 1 4.7-4.6l.3.3.3-.3a3.3 3.3 0 0 1 4.7 4.6l-5 4.8Z"/>'
+};
