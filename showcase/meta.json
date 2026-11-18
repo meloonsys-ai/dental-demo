@@ -1,50 +1,5 @@
 [
  {
-  "slug": "ademi",
-  "name": "Ademi",
-  "aura": "D5",
-  "dirName": "Editorial boutique",
-  "p": {
-   "palette": "olive-cream",
-   "type": "T3",
-   "shape": "arch",
-   "icons": "clinical",
-   "art": "tooth",
-   "strip": "objects",
-   "btn": "rect",
-   "nav": "N4",
-   "hero": "H4",
-   "about": "A3",
-   "services": "S2",
-   "gallery": "G1",
-   "contacts": "C3",
-   "pack": "premium",
-   "seed": 1
-  },
-  "rating": 5,
-  "reviews": 317,
-  "photos": 4,
-  "prices": false,
-  "missing": [
-   "логотип (SVG или PNG от 512px)",
-   "фото интерьера: есть 4, нужно 5+",
-   "цены",
-   "врачи: фото, имя, должность, стаж",
-   "до/после с согласием пациента",
-   "2-3 текста отзывов с источником",
-   "часы работы в структурированном виде",
-   "акции с условиями и сроком"
-  ],
-  "colors": {
-   "bg": "#f6f4ec",
-   "text": "#22231a",
-   "muted": "#585a47",
-   "accent": "#4f5f17",
-   "accentInk": "#ffffff",
-   "surface2": "#e9e6d2"
-  }
- },
- {
   "slug": "adistom",
   "name": "Adistom",
   "aura": "D4",
