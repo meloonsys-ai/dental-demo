@@ -442,3 +442,5 @@ body:has(#menu:not([hidden])) .nav { z-index: 45; }
 [data-nav=N5] .hero:not([data-layout=H6]) { padding-top: clamp(48px, 6vw, 88px); } /* breathing room under the floating capsule */
 .feature-body .actions { margin-top: 24px; }
 @media (max-width: 899px) { .brand { font-size: 1.0625rem; gap: 10px; } }
+/* img width/height attrs are only for layout reservation: keep the aspect wherever CSS sets just the width (zero specificity, explicit heights still win) */
+:where(img.render, img.r3d, img) { height: auto; }
